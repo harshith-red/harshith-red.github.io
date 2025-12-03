@@ -7,7 +7,7 @@
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
-  color: #868e96;
+  color: #6c757d; /* neutral gray text */
 }
 
 @media (min-width: 992px) {
@@ -26,7 +26,7 @@ h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40;
+  color: #111111; /* headings in near-black */
 }
 
 h1 {
@@ -58,7 +58,7 @@ p.lead {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #343a40; /* dark gray background for icons */
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
@@ -72,7 +72,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #222222; /* slightly darker on hover */
 }
 
 .dev-icons {
@@ -80,7 +80,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #111111;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -90,7 +90,7 @@ p.lead {
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: #555555;
 }
 
 @media (min-width: 992px) {
@@ -160,19 +160,19 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #111111 !important; /* dark sidebar */
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #111111 !important;
 }
 
 a {
-  color: #BD5D38;
+  color: #111111;
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #555555;
 }
 
 .fa-ul {
@@ -192,7 +192,7 @@ a:hover, a:focus, a:active {
 }
 
 .fab {
-  color: #BD5D38;
+  color: #111111;
 }
 
 hr.m-0 {
@@ -205,5 +205,16 @@ footer {
 }
 
 footer span {
-  color: #BD5D38;
+  color: #111111;
+}
+
+/* Mobile profile image sizing */
+@media (max-width: 991px) {
+  .img-profile {
+    max-width: 8rem;
+    max-height: 8rem;
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+  }
 }
